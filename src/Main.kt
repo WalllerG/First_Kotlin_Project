@@ -3,7 +3,8 @@
 fun main() {
     val interestingThings = arrayOf("Kotlin","Java","hello")
     sayHello(greeting = "Hi", items = interestingThings)
-    val person = Person(firstName = "Walter", lastName = "Guo")
+    val person = Person("Walter","Guo")
+    person.printName()
 }
 
 fun sayHello(greeting: String, vararg items:String) {
